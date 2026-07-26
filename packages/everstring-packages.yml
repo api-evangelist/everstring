@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=everstring
+notes: >-
+  No first-party EverString client library was found on npm, PyPI, RubyGems,
+  Maven Central, NuGet, pkg.go.dev, Packagist, or crates.io. EverString was
+  acquired by ZoomInfo in 2019 and published no maintained official SDKs. The
+  single registry hit is a community/third-party wrapper (author "Acton the
+  Developer", not EverString/ZoomInfo), recorded below with official:false.
+packages:
+- language: javascript
+  registry: npm
+  name: everstringapi
+  url: https://www.npmjs.com/package/everstringapi
+  install: npm install everstringapi
+  description: Community "Everstring API access library" wrapper (third-party).
+  author: Acton the Developer (actondev)
+  latest_version: 0.1.4
+  last_published: '2022-06-17'
+  official: false

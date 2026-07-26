@@ -1,0 +1,22 @@
+# Everstring
+
+> EverString was a B2B predictive marketing and sales intelligence platform (founded 2012) that used data science and machine learning over a proprietary business data cloud for predictive lead/account scoring, account-based marketing segmentation, firmographic enrichment, similar-company discovery, ML-generated keywords, and industry classification. It was acquired by ZoomInfo in November 2019; everstring.com now redirects to ZoomInfo Operations and the standalone developer portal is largely decommissioned. This is an API Evangelist profile of the historical API surface and current public footprint.
+
+## APIs
+
+- [EverString Enrichment API](https://developer.everstring.com/): Data cloud, AI, and ML components as a micro-service - similar-company discovery, ML-generated keywords, industry classification, and firmographic enrichment; access-token authentication. Base URL https://api.everstring.com (portal largely decommissioned post-acquisition).
+
+## Docs
+
+- [Developer Portal](https://developer.everstring.com/): Historical developer documentation for the Enrichment API.
+- [Company Website](https://www.everstring.com/): Redirects to ZoomInfo Operations following the 2019 acquisition.
+
+## Artifacts
+
+- [Packages](https://raw.githubusercontent.com/api-evangelist/everstring/refs/heads/main/packages/everstring-packages.yml): No first-party SDK; one third-party npm wrapper (everstringapi).
+- [Domain Security](https://raw.githubusercontent.com/api-evangelist/everstring/refs/heads/main/security/everstring-domain-security.yml): TLS/HSTS/DNSSEC/SPF/DMARC probe of the everstring.com hosts.
+
+## Notes
+
+- Status: acquired by ZoomInfo (2019-11). Backed by Lightspeed Venture Partners.
+- No public OpenAPI/AsyncAPI, MCP server, or maintained official SDK was found.

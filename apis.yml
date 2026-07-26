@@ -1,8 +1,31 @@
 aid: everstring
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/everstring.png
 name: Everstring
-description: Everstring is a company surfaced as a portfolio company of lightspeed-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  EverString was a B2B predictive marketing and sales intelligence platform that
+  used data science, machine learning, and a proprietary business data cloud to
+  help go-to-market teams identify their best-fit accounts. Its capabilities
+  included predictive lead and account scoring, account-based marketing
+  segmentation, firmographic enrichment, similar-company discovery, ML-generated
+  keywords, and industry classification, exposed to developers through an
+  Enrichment API on developer.everstring.com secured with access-token
+  authentication. Founded in 2012 and backed by investors including Lightspeed
+  Venture Partners, EverString was acquired by ZoomInfo in November 2019 and its
+  data and predictive capabilities were folded into the ZoomInfo platform; the
+  everstring.com website now redirects to ZoomInfo Operations and the standalone
+  developer portal has been largely decommissioned. This profile documents the
+  historical API surface and current public footprint.
 url: https://raw.githubusercontent.com/api-evangelist/everstring/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +33,51 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: zoominfo
+x-acquired-date: '2019-11'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Predictive Marketing
+- Sales Intelligence
+- Data Enrichment
+- Firmographics
+- Account Based Marketing
+- Lead Scoring
+- Machine Learning
+- Acquired
+common:
+- type: DomainSecurity
+  url: security/everstring-domain-security.yml
+- type: Website
+  url: https://www.everstring.com/
+- type: DeveloperPortal
+  url: https://developer.everstring.com/
+- type: Packages
+  url: packages/everstring-packages.yml
+- type: LLMsTxt
+  url: llms/everstring-llms.txt
+apis:
+- name: EverString Enrichment API
+  description: >-
+    The EverString Enrichment API exposed EverString's data cloud, AI, and
+    machine-learning components as a micro-service - similar-company discovery,
+    ML-generated keywords, industry classification, and firmographic enrichment -
+    secured with access-token authentication. The standalone portal is now
+    largely decommissioned following the ZoomInfo acquisition.
+  humanURL: https://developer.everstring.com/
+  baseURL: https://api.everstring.com
+  properties: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
