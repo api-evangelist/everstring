@@ -60,7 +60,7 @@ tags:
 - Firmographics
 - Account Based Marketing
 - Lead Scoring
-- Machine-Learning
+- Machine Learning
 - Acquired
 tags_raw:
 - Company
@@ -72,6 +72,7 @@ tags_raw:
 - Lead Scoring
 - Machine Learning
 - Acquired
+- Machine-Learning
 common:
 - type: DomainSecurity
   url: security/everstring-domain-security.yml
