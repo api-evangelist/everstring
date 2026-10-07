@@ -74,6 +74,8 @@ tags_raw:
 - Acquired
 - Machine-Learning
 common:
+- type: Plans
+  url: plans/everstring-plans-pricing.yml
 - type: DomainSecurity
   url: security/everstring-domain-security.yml
 - type: Website
